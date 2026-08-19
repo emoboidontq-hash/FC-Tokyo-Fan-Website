@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC东京 · 球队官网</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- 顶部横幅 -->
+<header class="hero-header" style="background-image: url('images/stadium-hero.jpg'); background-size: cover; background-position: center;">
+    <div class="hero-overlay">
+        <div class="hero-crest">
+            <img src="images/fc-tokyo-crest.jpg" alt="FC东京队徽" class="crest-img">
+        </div>
+        <h1 class="hero-title">FC东京 <span class="hero-subtitle">FC東京 · FC Tokyo</span></h1>
+        <p class="hero-tagline">東京の熱狂。</p>
+    </div>
+</header>
+
+<!-- 导航栏 -->
+<nav class="tab-nav">
+    <button class="tab-btn active" data-tab="intro">球队简介</button>
+    <button class="tab-btn" data-tab="matches">比赛日志</button>
+    <button class="tab-btn" data-tab="squad">阵容名单</button>
+    <button class="tab-btn" data-tab="honors">球队荣誉</button>
+    <button class="tab-btn" data-tab="history">历史战绩</button>
+</nav>
+
+<!-- 主内容区 -->
+<main class="main-content">
+
+    <!-- ============ 板块一：球队简介 ============ -->
+    <section id="intro" class="tab-content active">
+        <div class="section-header">
+            <h2>球队简介</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <!-- 俱乐部基本信息卡片 -->
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-icon"> Establishment</div>
+                <h3>成立年份</h3>
+                <p>1935年（前身：东京瓦斯SC）<br>1998年（职业化更名为FC东京）</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">Stadium</div>
+                <h3>主场球场</h3>
+                <p>味之素体育场<br>（Ajinomoto Stadium）<br>容量：49,970人</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">Location</div>
+                <h3>所在城市</h3>
+                <p>东京都调布市</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">League</div>
+                <h3>所属联赛</h3>
+                <p>J1联赛（日本顶级足球联赛）</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">Owner</div>
+                <h3>运营方</h3>
+                <p>MIXI集团（2022年至今）</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">Mascot</div>
+                <h3>吉祥物</h3>
+                <p>TOKYO DOROMPA</p>
+            </div>
+        </div>
+
+        <!-- 目前战绩 -->
+        <div class="record-section">
+            <h3 class="sub-section-title">目前战绩 <span class="record-season">2026/2027赛季 J1联赛</span></h3>
+            <div class="record-card">
+                <div class="record-rank">
+                    <div class="rank-number">17</div>
+                    <div class="rank-label">联赛排名</div>
+                </div>
+                <div class="record-stats">
+                    <div class="record-stat-item">
+                        <div class="record-stat-num">2</div>
+                        <div class="record-stat-label">比赛场次</div>
+                    </div>
+                    <div class="record-stat-item win">
+                        <div class="record-stat-num">0</div>
+                        <div class="record-stat-label">胜</div>
+                    </div>
+                    <div class="record-stat-item draw">
+                        <div class="record-stat-num">1</div>
+                        <div class="record-stat-label">平</div>
+                    </div>
+                    <div class="record-stat-item lose">
+                        <div class="record-stat-num">1</div>
+                        <div class="record-stat-label">负</div>
+                    </div>
+                    <div class="record-stat-item">
+                        <div class="record-stat-num">3</div>
+                        <div class="record-stat-label">进球</div>
+                    </div>
+                    <div class="record-stat-item">
+                        <div class="record-stat-num">7</div>
+                        <div class="record-stat-label">失球</div>
+                    </div>
+                    <div class="record-stat-item">
+                        <div class="record-stat-num negative">-4</div>
+                        <div class="record-stat-label">净胜球</div>
+                    </div>
+                    <div class="record-stat-item points">
+                        <div class="record-stat-num">1</div>
+                        <div class="record-stat-label">积分</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 球队阵型图 -->
+        <div class="formation-section" style="margin-bottom: 40px;">
+            <h3 class="sub-section-title">常用阵形</h3>
+            <div style="background: white; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow-md);">
+                <img src="images/team-formation.jpg" alt="FC东京 4-4-2 阵型" style="width: 100%; display: block;">
+            </div>
+        </div>
+
+        <!-- 球队历史 -->
+        <div class="history-section">
+            <h3 class="sub-section-title">球队历史</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1935</div>
+                    <div class="timeline-content">
+                        <h4>前身成立</h4>
+                        <p>东京瓦斯足球俱乐部成立，为FC东京的前身。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1998</div>
+                    <div class="timeline-content">
+                        <h4>职业化诞生</h4>
+                        <p>10月1日"东京市民日"，东京足球俱乐部正式成立，球队更名为"FC东京"。同年获得JFL冠军，取得J2联赛参赛资格。成为首支以东京都为主场的J联赛俱乐部。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1999</div>
+                    <div class="timeline-content">
+                        <h4>升入J1</h4>
+                        <p>J2联赛获得第二名，仅用一年便升入J1联赛。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2001</div>
+                    <div class="timeline-content">
+                        <h4>主场落成</h4>
+                        <p>东京体育场（现味之素体育场）正式启用，成为FC东京的长期主场。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2004</div>
+                    <div class="timeline-content">
+                        <h4>队史首冠</h4>
+                        <p>夺得J联赛山崎纳贝斯克杯（联赛杯），点球大战击败浦和红钻，俱乐部历史上第一座冠军奖杯。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2009</div>
+                    <div class="timeline-content">
+                        <h4>第二座联赛杯</h4>
+                        <p>2-0击败川崎前锋，第二次捧起联赛杯。长友佑都和石川直宏入选J联赛最佳十一人。</p>
+                    </div>
+                </div>
+                <div class="timeline-item highlight">
+                    <div class="timeline-year">2011</div>
+                    <div class="timeline-content">
+                        <h4>双冠王之年</h4>
+                        <p>2010年不幸降级J2，但2011年以J2冠军身份强势回归。更在天皇杯决赛4-0大胜京都不死鸟，首次夺得天皇杯冠军，获得亚冠联赛参赛资格。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2012</div>
+                    <div class="timeline-content">
+                        <h4>亚冠首秀</h4>
+                        <p>首次参加亚冠联赛，小组赛首战2-0击败布里斯班狮吼。16强阶段被淘汰。</p>
+                    </div>
+                </div>
+                <div class="timeline-item highlight">
+                    <div class="timeline-year">2019</div>
+                    <div class="timeline-content">
+                        <h4>J1联赛亚军</h4>
+                        <p>冠军悬念持续到末轮，最终获得J1联赛亚军。6名球员入选J联赛最佳十一人。场均主场观众突破3万人（31,540人）。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <h4>第三座联赛杯</h4>
+                        <p>赢得J联赛YBC Levain杯。决赛于2021年1月4日在新国立竞技场举行（因COVID-19延期）。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-content">
+                        <h4>MIXI时代</h4>
+                        <p>MIXI集团接手运营。在新国立竞技场举办首场主场比赛，吸引50,994名观众（当时纪录）。长友佑都第四次出征世界杯。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h4>观众纪录</h4>
+                        <p>7月13日对阵新潟天鹅的比赛吸引57,885名观众，创队史新高。赛季场均主场观众33,225人，同样创纪录。第四次获得J联赛最佳青训俱乐部奖。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2025</div>
+                    <div class="timeline-content">
+                        <h4>新征程</h4>
+                        <p>松橋力藏出任主教练。连续第三年获得J联赛最佳青训俱乐部奖（5次获奖，J联赛最多）。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 主教练信息 -->
+        <div class="coach-section">
+            <h3 class="sub-section-title">主教练</h3>
+            <div class="coach-card">
+                <div class="coach-avatar">
+                    <div class="avatar-placeholder coach-avatar-icon">
+                        <img src="images/coach_matsuhashi.jpg" alt="松橋力藏" class="coach-img"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+                        <div class="coach-svg-fallback" style="display:none;">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="35" r="22" fill="#0046A8"/>
+                                <path d="M15 95 Q15 60 50 60 Q85 60 85 95 Z" fill="#0046A8"/>
+                                <text x="50" y="42" text-anchor="middle" fill="white" font-size="20" font-weight="bold">松</text>
+                                <text x="50" y="82" text-anchor="middle" fill="#E60012" font-size="14" font-weight="bold">監督</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="coach-name-tag">
+                        <h4>松橋 力藏</h4>
+                        <p>Rikizo Matsuhashi</p>
+                    </div>
+                </div>
+                <div class="coach-info">
+                    <div class="coach-stats-row">
+                        <div class="coach-stat">
+                            <span class="stat-label">出生日期</span>
+                            <span class="stat-value">1968年8月22日（57岁）</span>
+                        </div>
+                        <div class="coach-stat">
+                            <span class="stat-label">国籍</span>
+                            <span class="stat-value">日本</span>
+                        </div>
+                        <div class="coach-stat">
+                            <span class="stat-label">出身地</span>
+                            <span class="stat-value">千叶县（生于东京都调布市）</span>
+                        </div>
+                        <div class="coach-stat">
+                            <span class="stat-label">常用阵型</span>
+                            <span class="stat-value">4-4-2（双后腰）</span>
+                        </div>
+                        <div class="coach-stat">
+                            <span class="stat-label">上任时间</span>
+                            <span class="stat-value">2025年2月1日</span>
+                        </div>
+                        <div class="coach-stat">
+                            <span class="stat-label">合同到期</span>
+                            <span class="stat-value">2027年6月30日</span>
+                        </div>
+                    </div>
+                    <div class="coach-bio">
+                        <p>松橋力藏球员时代司职中场/左边锋，曾效力日产自动车（后横滨水手）、京都紫桑加等队。退役后转型教练，在横滨水手青训体系深耕多年，后担任新潟天鹅主教练（2022-2024），带队136场。2025年2月正式出任FC东京主帅，2025赛季带队取得13胜9平14负（48分），排名J1第11位。同年12月4日获得续约合同。</p>
+                    </div>
+                    <div class="coach-career">
+                        <h5>执教经历</h5>
+                        <div class="career-timeline">
+                            <div class="career-item"><span class="career-years">2002-2003</span><span class="career-role">Jatco 助理教练</span></div>
+                            <div class="career-item"><span class="career-years">2004-2020</span><span class="career-role">横滨水手 青训教练 / 一线队教练</span></div>
+                            <div class="career-item"><span class="career-years">2021</span><span class="career-role">新潟天鹅 一线队教练</span></div>
+                            <div class="career-item"><span class="career-years">2022-2024</span><span class="career-role">新潟天鹅 主教练（136场，1.53 PPM）</span></div>
+                            <div class="career-item current"><span class="career-years">2025-至今</span><span class="career-role">FC东京 主教练</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 球场图片区 -->
+        <div class="stadium-section">
+            <h3 class="sub-section-title">主场球场</h3>
+            <div class="stadium-card">
+                <div class="stadium-image-placeholder">
+                    <img src="images/stadium-hero.jpg" alt="味之素体育场" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="stadium-info">
+                    <h4>味之素体育场</h4>
+                    <p><strong>位置：</strong>东京都调布市</p>
+                    <p><strong>容量：</strong>49,970人</p>
+                    <p><strong>启用：</strong>2001年3月10日</p>
+                    <p><strong>用途：</strong>足球、橄榄球、演唱会等</p>
+                    <p><strong>特点：</strong>日本首座专为足球设计的专业球场，也是FC东京和东京绿茵的共同主场。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 板块：比赛日志 ============ -->
+    <section id="matches" class="tab-content">
+        <div class="section-header">
+            <h2>比赛日志</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <p class="matches-intro">2026/2027赛季比赛结果</p>
+
+        <!-- 比赛图片列表 -->
+        <div class="matches-list" id="matchesList">
+            <!-- 比赛图片由JS动态生成 -->
+        </div>
+    </section>
+
+    <!-- ============ 板块二：阵容名单 ============ -->
+    <section id="squad" class="tab-content">
+        <div class="section-header">
+            <h2>阵容名单</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <!-- 位置筛选 -->
+        <div class="position-filter">
+            <button class="filter-btn active" data-position="ALL">全部</button>
+            <button class="filter-btn" data-position="GK">门将 (GK)</button>
+            <button class="filter-btn" data-position="DF">后卫 (DF)</button>
+            <button class="filter-btn" data-position="MF">中场 (MF)</button>
+            <button class="filter-btn" data-position="FW">前锋 (FW)</button>
+        </div>
+
+        <!-- 球员网格 -->
+        <div class="player-grid" id="playerGrid">
+            <!-- 球员卡片由JS动态生成 -->
+        </div>
+    </section>
+
+    <!-- ============ 板块三：球队荣誉 ============ -->
+    <section id="honors" class="tab-content">
+        <div class="section-header">
+            <h2>球队荣誉</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <!-- 荣誉统计 -->
+        <div class="honors-summary">
+            <div class="honor-stat-card">
+                <div class="honor-number">6</div>
+                <div class="honor-label">主要冠军</div>
+            </div>
+            <div class="honor-stat-card">
+                <div class="honor-number">3</div>
+                <div class="honor-label">J联赛杯</div>
+            </div>
+            <div class="honor-stat-card">
+                <div class="honor-number">1</div>
+                <div class="honor-label">天皇杯</div>
+            </div>
+            <div class="honor-stat-card">
+                <div class="honor-number">5</div>
+                <div class="honor-label">最佳青训奖</div>
+            </div>
+        </div>
+
+        <!-- 荣誉列表 -->
+        <div class="honors-list" id="honorsList">
+            <!-- 荣誉卡片由JS动态生成 -->
+        </div>
+
+        <!-- 亚冠参赛记录 -->
+        <div class="acl-section">
+            <h3 class="sub-section-title">亚冠联赛参赛记录</h3>
+            <div class="acl-cards">
+                <div class="acl-card">
+                    <div class="acl-year">2012</div>
+                    <div class="acl-result">16强</div>
+                    <p>首次参加亚冠，小组出线后在16强被淘汰。</p>
+                </div>
+                <div class="acl-card">
+                    <div class="acl-year">2016</div>
+                    <div class="acl-result">16强</div>
+                    <p>附加赛9-0大胜春武里FC晋级，再次止步16强。</p>
+                </div>
+                <div class="acl-card">
+                    <div class="acl-year">2020</div>
+                    <div class="acl-result">16强</div>
+                    <p>因COVID-19在卡塔尔集中比赛，16强被淘汰。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 板块四：历史战绩 ============ -->
+    <section id="history" class="tab-content">
+        <div class="section-header">
+            <h2>历史战绩</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <p class="history-intro">2011-2026赛季 FC东京联赛征战记录（共16个赛季，其中J1联赛14个赛季、J2联赛1个赛季、J1百年构想1个赛季）</p>
+
+        <!-- 历史战绩列表 -->
+        <div class="history-list" id="historyList">
+            <!-- 赛季卡片由JS动态生成 -->
+        </div>
+    </section>
+
+</main>
+
+<!-- ============ 球员详情弹窗 ============ -->
+<div class="player-modal-overlay" id="playerModal">
+    <div class="player-modal">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <div class="modal-content" id="modalContent">
+            <!-- 球员详情由JS动态生成 -->
+        </div>
+    </div>
+</div>
+
+<!-- 页脚 -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-crest">
+            <img src="images/fc-tokyo-crest.jpg" alt="FC东京队徽" class="crest-img small">
+        </div>
+        <h3>FC东京 · FC東京</h3>
+        <p>東京の熱狂。 — 东京的热情。</p>
+        <p class="footer-info">本网站为球迷自制页面，数据来源于FC东京官方网站、J联赛官网及FBRef。</p>
+    </div>
+</footer>
+
+<script>
+// 动态加载脚本，加时间戳防止浏览器缓存
+(function() {
+    var t = '_t=' + Date.now();
+    var s1 = document.createElement('script');
+    s1.src = 'data.js?' + t;
+    s1.onload = function() {
+        var s2 = document.createElement('script');
+        s2.src = 'script.js?' + t;
+        document.body.appendChild(s2);
+    };
+    document.body.appendChild(s1);
+})();
+</script>
+
+</body>
+</html>

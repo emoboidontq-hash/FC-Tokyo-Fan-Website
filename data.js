@@ -339,7 +339,7 @@ const honorsData = [
         details: [
             { year: 2004, description: "点球大战击败浦和红钻，队史首冠" },
             { year: 2009, description: "2-0击败川崎前锋，第二次捧杯" },
-            { year: 2020, description: "决赛于2021年1月4日在新国立竞技场举行（因COVID延期）" }
+            { year: 2020, description: "2-1击败柏太阳神，第三次捧杯" }
         ]
     },
     {
